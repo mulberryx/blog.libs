@@ -1,0 +1,29 @@
+{
+  "name": "blog.libs",
+  "homepage": "https://github.com/mulberryx/blog.libs",
+  "authors": [
+    "Mulberry <wowcxy2008@126.com>"
+  ],
+  "description": "blog libs",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "sketch.js": "*",
+    "bootstrap": "^3.3.7",
+    "PACE": "pace#^1.0.2",
+    "echarts": "^3.8.5",
+    "requirejs": "^2.3.5",
+    "snap": "*",
+    "ckeditor": "^4.8.0",
+    "three.js": "threejs#*",
+    "webuploader": "*"
+  }
+}

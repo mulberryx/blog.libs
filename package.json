@@ -1,0 +1,34 @@
+{
+  "name": "blog.libs",
+  "version": "0.1.1",
+  "description": "blog libs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mulberryx/blog.libs.git"
+  },
+  "author": "chenxiangyu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mulberryx/blog.libs/issues",
+    "email": "wowcxy2008@126.com"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    ".istanbul.yml",
+    ".travis.yml",
+    ".eslintrc",
+    ".babelrc",
+    ".bowerrc"
+  ],
+  "scripts": {
+    "publish": "",
+  },
+  "dependencies": {
+    "gulp": "latest",
+    "gulp-qniu": "latest"
+  },
+  "engines": {
+    "node": ">= 8.9.1"
+  }
+}
