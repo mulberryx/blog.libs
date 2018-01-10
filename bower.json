@@ -5,15 +5,7 @@
     "Mulberry <wowcxy2008@126.com>"
   ],
   "description": "blog libs",
-  "main": "",
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "jquery": "^3.2.1",
     "sketch.js": "*",

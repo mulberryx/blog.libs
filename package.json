@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/mulberryx/blog.libs.git"
   },
-  "author": "chenxiangyu",
+  "author": "mulberryx",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mulberryx/blog.libs/issues",
@@ -21,14 +21,7 @@
     ".babelrc",
     ".bowerrc"
   ],
-  "scripts": {
-    "publish": "",
-  },
   "dependencies": {
-    "gulp": "latest",
-    "gulp-qniu": "latest"
-  },
-  "engines": {
-    "node": ">= 8.9.1"
+    "qniu": "latest"
   }
 }
