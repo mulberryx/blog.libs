@@ -12,15 +12,6 @@
     "url": "https://github.com/mulberryx/blog.libs/issues",
     "email": "wowcxy2008@126.com"
   },
-  "files": [
-    "LICENSE",
-    "README.md",
-    ".istanbul.yml",
-    ".travis.yml",
-    ".eslintrc",
-    ".babelrc",
-    ".bowerrc"
-  ],
   "dependencies": {
     "qniu": "latest"
   }
