@@ -1,7 +1,8 @@
-### libs
+### blog.libs
 blog libs
 
-#### cli
-- install
-- publish
-- lint
+#### scripts
+##### publish
+publish libs to cdn
+##### lint
+run lint to check grammar
