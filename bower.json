@@ -1,13 +1,13 @@
 {
   "name": "blog.libs",
-  "homepage": "https://github.com/mulberryx/blog.libs",
+  "homepage": "https://github.com/steudnera/blog.libs",
   "authors": [
-    "Mulberry <wowcxy2008@126.com>"
+    "Steudnera <wowcxy2008@126.com>"
   ],
   "description": "blog libs",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^3.3.1",
     "sketch.js": "*",
     "bootstrap": "^3.3.7",
     "PACE": "pace#^1.0.2",
@@ -15,7 +15,6 @@
     "requirejs": "^2.3.5",
     "snap": "*",
     "ckeditor": "^4.8.0",
-    "three.js": "threejs#*",
     "webuploader": "*"
   }
 }
