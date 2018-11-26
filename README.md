@@ -3,7 +3,7 @@ blog libs
 
 #### scripts
 - publish: publish libs to cdn
-- lint: run lint to check grammar
+- bower: install packages
 
 #### libs
 - jquery
