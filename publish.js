@@ -1,37 +1,56 @@
 /**
- * 依赖库发布
- * @author steudnera
+ * ali oss
+ * @author Philip
  */
-const qn = require('qn');
 
-const options = {
-  accessKey: 'KcH25vxJ8THYo9ExNp_-Kobr-TebdAZLss-JuLvD',
-  secretKey: 'y82r6nTrPeQpjs5UXRdHlwePZh_9nFKIS-6gJFEn',
-  bucket: 'static',
-  domain: 'ocgkyeaew.bkt.clouddn.com'
-};
+const fs = require("fs")
+const AliOss = require("ali-oss")
 
-const client = qn.create(options);
-const distpaths = {
-  "bootstrap": "^3.3.7",
-  "echarts": "^3.8.5",
-  "snap": "*",
-  "ckeditor": "^4.8.0",
-  "three.js": "threejs#*",
-  "webuploader": "*",
-};
+module.exports = {
+  /**
+   * 获取阿里云 Oss 实例
+   * @return {AliOss} 阿里云 Oss SDK 实例
+   */
+  getClient () {
+    var config = this.getConfig()
+    var client = null
 
-const filepaths = {
-  "jquery": "^3.3.1",
-  "sketch.js": "*",
-  "PACE": "pace#^1.0.2",
-  "requirejs": "^2.3.5",
-};
+    if (config) {
+      client = new AliOss(config.ali_oss)
+    }
+    
+    return client
+  },
 
-Object.keys(filepaths).forEach((lib) => {
-  const filepath = filepaths[lib];
-
-  client.uploadFile(filepath, { key: 'qn/lib/client.js' }, (err, result) => {
-    console.info(result);
-  });
-});
+  /**
+   * 获取部署配置
+   * @return {object} 部署配置
+   */
+  getConfig () {
+    let config = null
+    
+    try {
+      config = JSON.parse(fs.readFileSync(".deploy.json", "utf8"))
+    } catch (err) {
+      console.error(err)
+    }
+    
+    return config
+  },
+  
+  /**
+   * 上传
+   * @param {string} 要上传的文件路径
+   * @return none
+   */
+  async upload (objectname, filepath) {
+    const client = this.getClient()
+    const config = this.getConfig()
+    
+    try {
+      return await client.put(objectname, filepath)
+    } catch (err) {
+      console.error(err)
+    }
+  }
+}
