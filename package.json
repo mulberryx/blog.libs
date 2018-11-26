@@ -14,8 +14,7 @@
   },
   "scripts": {
     "bower": "bower install",
-    "publish": "node publish.js",
-    "lint": "eslint --ext .js"
+    "publish": "node publish.js"
   },
   "pre-commit": [
     "lint"
